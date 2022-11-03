@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e0d2710711fe481ba40bc85090143e59" Name="Diagram1">
+        <EntityTypeShape EntityType="planting_parksModel.Designers" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="planting_parksModel.Plants" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="planting_parksModel.RegimeWatering" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="planting_parksModel.Services" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="planting_parksModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="planting_parksModel.Workers" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="planting_parksModel.FK_Plants_Workers" ManuallyRouted="false" />
+        <AssociationConnector Association="planting_parksModel.FK_RegimeWatering_Plants" ManuallyRouted="false" />
+        <AssociationConnector Association="planting_parksModel.FK_Workers_RegimeWatering" ManuallyRouted="false" />
+        <AssociationConnector Association="planting_parksModel.FK_Services_Workers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

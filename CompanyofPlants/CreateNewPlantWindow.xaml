@@ -1,0 +1,54 @@
+﻿<Window x:Class="CompanyofPlants.CreateNewPlantWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CompanyofPlants"
+        mc:Ignorable="d"
+        Title="CreateNewPlantWindow" Background="#FF5D98CB" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+        </Grid.RowDefinitions>       
+        <TextBlock Text="Дата посадки" Grid.Row="1"></TextBlock>
+        <TextBlock Text="Возраст растение" Grid.Row="2"></TextBlock>
+        <TextBlock Text="Сорт" Grid.Row="3"></TextBlock>
+        <TextBox x:Name="DatePlants" MaxLength="10" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Width="200">
+            <TextBox.Text>
+                <Binding Path="Date_planting">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox x:Name="AgePlants" MaxLength="100" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Width="200">
+            <TextBox.Text>
+                <Binding Path="Plant_age">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox x:Name="SortPlants" MaxLength="100" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Width="200">
+            <TextBox.Text>
+                <Binding Path="Sort_plant">
+                    <Binding.ValidationRules>
+                        <ExceptionValidationRule />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <Button x:Name="SavePlantsButton" Content="Добавить растение" Grid.Row="4" Grid.ColumnSpan="2" Click="SavePlantsButton_Click"/>
+        <Button x:Name="ExitButton" Content="Назад" Click="ExitButton_Click"/>
+    </Grid>
+</Window>
