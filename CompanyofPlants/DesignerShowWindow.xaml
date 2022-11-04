@@ -18,7 +18,7 @@
         <StackPanel Background="#FF678385" Grid.Row="0" Grid.Column="1">
             <Label Height="25" Width="auto" Content="Введите имя дезайнера" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>           
             <TextBox TextChanged="SearchTextBox" x:Name="SearchTextBox_name"  Margin="5" Height="25" Width="150"/>
-            <Button x:Name="DeleteDesigner" Width="140" Content="Удалить дезайнера" Click="DeleteDesignerButton_Click"/>            
+            <Button x:Name="DeleteDesigner" Width="140" Content="Удалить дизайнера" Click="DeleteDesignerButton_Click"/>            
         </StackPanel>
         <WrapPanel Grid.Row="0" Grid.Column="0" Background="#FF678385">           
             <Button x:Name="ExitButton" Width="140" Content="Назад" Click="ExitButton_Click" />

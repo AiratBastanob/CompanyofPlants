@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CompanyofPlants"
         mc:Ignorable="d"
-        Title="CreateNewPlantWindow" Background="#FF5D98CB" Height="450" Width="800">
+        Title="Создание растение" Icon="Icons.jpg" Background="#FF5D98CB" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"></ColumnDefinition>
